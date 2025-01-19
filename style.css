@@ -156,7 +156,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 30px !important;
-  z-index: 5;
+  z-index: 101;
   width: 200px;
 }
 .girl img {
