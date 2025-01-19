@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/Logo-name.png" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <nav class="navbar fixed-top nav">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <a class="navbar-brand ms-2 text-white" href="#">
+            <img src="./assets/Logo-name.png" alt="logo" />
+          </a>
+        </div>
+      </nav>
+
+      <div class="row all">
+        <!-- Offcanvas Navbar for smaller screens -->
+
+        <div
+          class="offcanvas offcanvas-start text-white d-md-none nav"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          id="navbar-example2"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body" id="">
+            <ul
+              class="navbar-nav flex-column align-items-center mt-3 text-center w-100"
+            >
+              <img src="./image.svg" class="img-fluid rounded-circle svg-img" />
+              <h4>Mariem ElHawary</h4>
+              <div class="social row mt-2">
+                <div class="col">
+                  <a
+                    href="https://www.facebook.com/share/1F7WkxsNjB/?mibextid=LQQJ4d"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.linkedin.com/in/mariem-el-hawary/">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+
+                <div class="col">
+                  <a href="https://wa.me/201151386999"
+                    ><i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <nav class="nav nav-pills flex-column mt-3 w-100">
+                <a class="nav-link text-white active" href="#home"
+                  ><i class="fa-solid fa-house"></i>Home</a
+                >
+                <a class="nav-link text-white" href="#about"
+                  ><i class="fa-solid fa-user"></i>About</a
+                >
+                <a class="nav-link text-white" href="#services"
+                  ><i class="fa-solid fa-wand-magic-sparkles"></i>Services</a
+                >
+                <a class="nav-link text-white" href="#resume"
+                  ><i class="fa-regular fa-file-lines"></i>Resume</a
+                >
+                <a class="nav-link text-white" href="#projects"
+                  ><i class="fa-brands fa-creative-commons-nd"></i>Projects</a
+                >
+                <a class="nav-link text-white" href="#testmonials"
+                  ><i class="fa-solid fa-comments"></i>Testmonials</a
+                >
+                <a class="nav-link text-white" href="#contact"
+                  ><i class="fa-solid fa-envelope"></i>Contact</a
+                >
+              </nav>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sidebar Navbar always open on larger screens -->
+        <div
+          class="col-md-2 d-none d-md-block text-white nav fixed-top"
+          id="navbar-example2"
+          style="height: 100vh"
+        >
+          <ul
+            class="navbar-nav flex-column align-items-center mt-3 text-center"
+          >
+            <img
+              src="./image.svg"
+              class="img-fluid rounded-circle svg-img mb-2"
+            />
+
+            <!-- <img src="./assets/me.jpg" class="img-fluid rounded-circle" /> -->
+            <h4>Mariem ElHawary</h4>
+            <div class="social row mt-2">
+              <div class="col">
+                <a
+                  href="https://www.facebook.com/share/1F7WkxsNjB/?mibextid=LQQJ4d"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/in/mariem-el-hawary/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="https://wa.me/201151386999"
+                  ><i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            <nav class="nav nav-pills flex-column mt-3 w-100">
+              <a class="nav-link text-white active" href="#home"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+              <a class="nav-link text-white" href="#about"
+                ><i class="fa-solid fa-user"></i>About</a
+              >
+              <a class="nav-link text-white" href="#skills"
+                ><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a
+              >
+              <a class="nav-link text-white" href="#services"
+                ><i class="fa-solid fa-wand-magic-sparkles"></i>Services</a
+              >
+              <a class="nav-link text-white" href="#resume"
+                ><i class="fa-regular fa-file-lines"></i>Resume</a
+              >
+              <a class="nav-link text-white" href="#projects"
+                ><i class="fa-brands fa-creative-commons-nd"></i>Projects</a
+              >
+              <a class="nav-link text-white" href="#testmonials"
+                ><i class="fa-solid fa-comments"></i>Testmonials</a
+              >
+
+              <a class="nav-link text-white" href="#contact"
+                ><i class="fa-solid fa-envelope"></i>Contact</a
+              >
+            </nav>
+          </ul>
+        </div>
+        <!-- Main Content Area -->
+
+        <div
+          class="col-md-10 offset-md-2 p-2 d-flex flex-column content"
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example2"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example-2"
+          tabindex="0"
+        >
+          <!-- Your main content here -->
+          <div
+            id="home"
+            class="d-flex flex-column justify-content-center align-items-center align-items-md-start p-3"
+            style="height: 100vh"
+          >
+            <h1>Mariem ElHawary</h1>
+            <h3 class="fs-5">I'm <span id="typing-text"></span></h3>
+            <div class="row d-flex flex-column flex-md-row mt-3 gap-2">
+              <a
+                href="#contact"
+                class="btn btn-primary mr-2 hire rounded-pill p-2"
+              >
+                <div>Hire Me</div>
+              </a>
+              <a
+                href="./MariemElhawary.pdf"
+                download="Mariem_ElHawary_Resume.pdf"
+                class="btn btn-primary mr-2 download rounded-pill p-2"
+              >
+                <div>Download CV</div>
+              </a>
+            </div>
+          </div>
+          <div
+            id="about"
+            class="d-flex flex-column p-3"
+            style="min-height: 100vh"
+          >
+            <div class="row">
+              <h1 class="section-title postion-relative">About</h1>
+              <p>
+                I am a frontend engineer passionate about building intuitive and
+                visually appealing user interfaces. I have expertise in modern
+                web technologies, including React and JavaScript, and experience
+                in creating responsive, user-friendly designs.
+              </p>
+            </div>
+            <div class="row mt-2">
+              <div class="col-10 col-md-5 me-img" style="height: 100vh">
+                <img src="./assets/Frame.png" class="img-fluid" />
+              </div>
+              <div class="col-10 col-md-5">
+                <h2>UI/UX Designer & Web Developer.</h2>
+                <ul class="list-unstyled postion-relative about-list">
+                  <li><span></span>Name: Mariem Mostafa</li>
+                  <li>
+                    <span></span>Profession: Frontend Engineer & Web Designer
+                  </li>
+                  <li><span></span>Location: Egypt</li>
+                  <li><span></span>Phone: +201120183256</li>
+                  <li><span></span>Email: mariemhawary843@gmail.com</li>
+                </ul>
+                <p>
+                  I graduated from Zagazig University with an A-grade in
+                  Computer Science and am currently specializing in Web and User
+                  Interface at the Information Technology Institute (ITI),
+                  Ismailia branch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="skills"
+            class="d-flex flex-column p-3"
+            style="min-height: 100vh"
+          >
+            <div class="row">
+              <h1 class="section-title postion-relative col-12">Skills</h1>
+              <p>
+                I combine a strong technical foundation with a creative approach
+                to solving problems. I’m detail-oriented, enjoy collaboration,
+                and always seek opportunities to improve.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-10 col-md-5">
+                <h5>HTML</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="25"
+                  ></div>
+                </div>
+                <h5>CSS</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="50"
+                  ></div>
+                </div>
+                <h5>Bootstrap</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="75"
+                  ></div>
+                </div>
+                <h5>JavaScript</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 col-md-5">
+                <h5>Next</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="25"
+                  ></div>
+                </div>
+                <h5>Node.js</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="50"
+                  ></div>
+                </div>
+                <h5>Angular</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="75"
+                  ></div>
+                </div>
+                <h5>React</h5>
+                <div class="progress my-2">
+                  <div
+                    class="progress-bar bg-secondary"
+                    data-progress="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="services"
+            class="d-flex flex-column p-3"
+            style="min-height: 100vh"
+          >
+            <div class="row">
+              <h1 class="section-title postion-relative col-10">Services</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-10 col-md-3 service">
+                <img class="img-fluid" src="./assets/img1.png" alt="service1" />
+                <div class="info">
+                  <h4>UI/UX Design</h4>
+                  <p>
+                    Crafting user interfaces that are intuitive and visually
+                    appealing
+                  </p>
+                </div>
+              </div>
+              <div class="col-10 col-md-3 service">
+                <img class="img-fluid" src="./assets/img2.png" alt="service1" />
+                <div class="info">
+                  <h4>Full-Stack Web Development</h4>
+                  <p>
+                    Building both the frontend and backend of web applications
+                  </p>
+                </div>
+              </div>
+              <div class="col-10 col-md-3 service">
+                <img class="img-fluid" src="./assets/img3.png" alt="service1" />
+                <div class="info">
+                  <h4>API Development & Integration</h4>
+                  <p>
+                    Developing and integrating APIs to connect frontend
+                    applications with backend services
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="resume"
+            class="d-flex flex-column p-3"
+            style="min-height: 100vh"
+          >
+            <div class="row">
+              <h1 class="section-title postion-relative col-10">Resume</h1>
+              <p>
+                "Frontend Engineer with expertise in creating responsive,
+                user-friendly web applications using modern frameworks like
+                React and Angular. Skilled in designing clean UIs, optimizing
+                performance, and delivering engaging user experiences."
+              </p>
+              <!-- Professional Summary -->
+              <div class="border-all">
+                <div class="resume-section">
+                  <h3>Professional Summary</h3>
+
+                  <div class="wrap">
+                    <p>
+                      Frontend Engineer with expertise in creating responsive,
+                      user-friendly web applications using modern frameworks
+                      like React and Angular. Skilled in designing clean UIs,
+                      optimizing performance, and delivering engaging user
+                      experiences.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                  <h3>Skills</h3>
+
+                  <div class="wrap">
+                    <ul>
+                      <li>
+                        <strong>Frontend Development:</strong> React, Angular,
+                        HTML, CSS, JavaScript, TypeScript
+                      </li>
+                      <li>
+                        <strong>Backend Development:</strong> Node.js, Express,
+                        Firebase
+                      </li>
+                      <li><strong>UI/UX Design:</strong> Figma, Adobe XD</li>
+                      <li>
+                        <strong>Other Tools:</strong> Git, Webpack, REST APIs
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-section">
+                  <h3>Freelance Experience</h3>
+
+                  <div class="wrap">
+                    <div class="experience-item">
+                      <h4>Frontend Developer</h4>
+                      <p>
+                        <strong>Freelance Projects</strong> | 2024 – Present
+                      </p>
+                      <ul>
+                        <li>
+                          Designed and developed responsive websites for clients
+                          using React, HTML, CSS, and JavaScript.
+                        </li>
+                        <li>
+                          Built a portfolio website for a client, improving
+                          their online presence and engagement.
+                        </li>
+                        <li>
+                          Optimized web applications for performance, reducing
+                          load times by 20%.
+                        </li>
+                        <li>
+                          Collaborated with clients to understand requirements
+                          and deliver user-focused solutions.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                  <h3>Education</h3>
+
+                  <div class="wrap">
+                    <p>
+                      <strong>BSc in Computer Science</strong>, Zagazig
+                      University, 2024, Grade: A
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="resume-section">
+                  <h3>Certifications</h3>
+
+                  <div class="wrap">
+                    <ul>
+                      <li>ITI 9-Month Program, Web & User Interface Track</li>
+                      <li>Udemy Certificate in Angular and TypeScript</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="resume-section">
+                  <h3>Contact Information</h3>
+
+                  <div class="wrap">
+                    <ul>
+                      <li><strong>Email:</strong> mariemhawary843@gmail.com</li>
+                      <li>
+                        <strong>LinkedIn:</strong>
+                        <a
+                          href="https://linkedin.com/in/mariem-el-hawary"
+                          target="_blank"
+                          >mariem-el-hawary</a
+                        >
+                      </li>
+                      <li>
+                        <strong>GitHub:</strong>
+                        <a
+                          href="https://github.com/mariemhawry21
+"
+                          target="_blank"
+                          >mariemhawry21
+                        </a>
+                      </li>
+                      <li>
+                        <strong>Download Resume:</strong>
+                        <a href="MariemElhawary.pdf" download>Download PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row"></div>
+          </div>
+          <div
+            id="projects"
+            class="d-flex flex-column align-items-center p-3"
+            style="min-height: 100vh"
+          >
+            <div class="row align-self-start">
+              <h1 class="section-title position-relative col-10">Projects</h1>
+            </div>
+            <ul
+              class="nav nav-tabs bg-main d-flex justify-content-center"
+              id="tabs"
+            >
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" data-category="all">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" data-category="front">Front</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" data-category="Full-Stack"
+                  >Full-Stack</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" data-category="ui">UI</a>
+              </li>
+            </ul>
+            <div id="project-list" class="row justify-content-center mt-3 mb-3">
+              <!-- Projects will be displayed here -->
+            </div>
+          </div>
+          <div
+            id="testmonials"
+            class="d-flex flex-column align-items-center p-3"
+            style="height: 100vh"
+          >
+            <div class="row align-self-start">
+              <h1 class="section-title position-relative col-10">
+                Testmonials
+              </h1>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide col-10">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner bg-white text-black p-5 rounded">
+                <i id="right" class="fa-solid fa-quote-left"></i>
+
+                <div class="carousel-item active text-center">
+                  <h5>client1</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sequi, nobis minima odit, quod, unde et rerum facere
+                    laudantium mollitia ducimus ipsam optio cumque voluptate eos
+                    provident dolore enim tempora fuga.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-user">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item text-center">
+                  <h5>client2</h5>
+
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sequi, nobis minima odit, quod, unde et rerum facere
+                    laudantium mollitia ducimus ipsam optio cumque voluptate eos
+                    provident dolore enim tempora fuga.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-user">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item text-center">
+                  <h5>client3</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sequi, nobis minima odit, quod, unde et rerum facere
+                    laudantium mollitia ducimus ipsam optio cumque voluptate eos
+                    provident dolore enim tempora fuga.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-user">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                </div>
+                <i id="left" class="fa-solid fa-quote-right"></i>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div
+            id="contact"
+            class="d-flex flex-column p-1 pb-5"
+            style="min-height: 100vh"
+          >
+            <div class="row">
+              <h1 class="section-title position-relative col-10">Contact</h1>
+            </div>
+
+            <div class="row justify-content-center position-relative">
+              <div class="col-10 position-relative">
+                <div
+                  class="row form-cont position-relative justify-content-around mt-5"
+                >
+                  <img
+                    src="./assets/working.png"
+                    class="girl position-absolute top-0 start-0 translate-middle index-100"
+                  />
+                  <div class="col-10 col-md-5">
+                    <h3>Get in touch</h3>
+
+                    <p class="">
+                      I’m very approachable and would love to speak to you. Feel
+                      free to call, send me an email . Follow me in social media
+                      or simply complete the enquiry form.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-phone"></i>
+                      <span class="m-3">+201120183256</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span class="m-3"> mariemhawary843@gmail.com</span>
+                    </div>
+                  </div>
+                  <div
+                    class="col-10 col-md-5 d-flex flex-column justify-content-center"
+                  >
+                    <h3>Send me a message</h3>
+                    <form method="POST" id="form" class="d-flex flex-column">
+                      <input
+                        type="hidden"
+                        name="access_key"
+                        value="0f266911-64c6-4562-8b44-7d900610b5d1"
+                      />
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="name"
+                      />
+                      <input
+                        type="text"
+                        name="number"
+                        placeholder="phone number"
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="email"
+                      />
+
+                      <textarea
+                        name="message"
+                        rows="5"
+                        required
+                        placeholder="message"
+                      ></textarea>
+                      <button
+                        type="submit"
+                        class="download p-2 text-white rounded"
+                      >
+                        Submit
+                      </button>
+                      <div id="result"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer row p-5 m-0 w-100 position-relative">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-2 m-3">
+                <a
+                  class="text-white d-flex align-items-center justify-content-center"
+                  href="#home"
+                  ><i class="fa-solid fa-house"></i
+                  ><span class="m-2=">Home</span>
+                </a>
+              </div>
+              <div class="col-2 m-3">
+                <a
+                  class="text-white d-flex align-items-center justify-content-center"
+                  href="#about"
+                  ><i class="fa-solid fa-user"></i
+                  ><span class="m-2">About</span></a
+                >
+              </div>
+
+              <div class="col-2 m-3">
+                <a
+                  class="text-white d-flex align-items-center justify-content-center"
+                  href="#services"
+                  ><i class="fa-solid fa-wand-magic-sparkles"></i
+                  ><span class="m-2">Services</span></a
+                >
+              </div>
+              <div class="col-2 m-3">
+                <a
+                  class="text-white d-flex align-items-center justify-content-center"
+                  href="#projects"
+                  ><i class="fa-brands fa-creative-commons-nd"></i
+                  ><span class="m-2">Projects</span></a
+                >
+              </div>
+            </div>
+            <div class="social d-flex mt-5 justify-content-center">
+              <a
+                class="m-2"
+                href="https://www.facebook.com/share/1F7WkxsNjB/?mibextid=LQQJ4d"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                class="m-2"
+                href="https://www.linkedin.com/in/mariem-el-hawary/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="m-2" href="https://wa.me/201151386999"
+                ><i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <hr />
+            <p class="text-center">@copyright</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
