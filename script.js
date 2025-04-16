@@ -156,6 +156,15 @@ let data = [
     discription:
       "Book Management System designed to manage a collection of books efficiently.The system provides features for adding, editing, and deleting book records ",
   },
+  {
+    projectTitle: "Furniro e-commerce ",
+    screenSrc: "./assets/projectsScreens/furniro.png",
+    liveUrl: "https://furniture-ecommerce-frontend.vercel.app/home",
+    projectCategorey: "Full-Stack",
+    progectDevTool: "Angular - MongoDB - Express",
+    discription:
+      "Furniro is a complete e-commerce solution for furniture shopping built with performance, scalability, and user experience in mind. ",
+  },
 ];
 
 let projectContainer = document.querySelector("#project-list");
@@ -214,7 +223,6 @@ showAll(data);
 const prevButton = document.querySelector(".carousel-control-prev");
 const nextButton = document.querySelector(".carousel-control-next");
 
-
 function handleHover(direction) {
   const event = new Event("click");
   if (direction === "prev") {
@@ -226,4 +234,3 @@ function handleHover(direction) {
 
 prevButton.addEventListener("mouseenter", () => handleHover("prev"));
 nextButton.addEventListener("mouseenter", () => handleHover("next"));
-
