@@ -161,9 +161,18 @@ let data = [
     screenSrc: "./assets/projectsScreens/furniro.png",
     liveUrl: "https://furniture-ecommerce-frontend.vercel.app/home",
     projectCategorey: "Full-Stack",
-    progectDevTool: "Angular - MongoDB - Express",
+    progectDevTool: "Angular - MongoDB - Express - Atlas mongoDB",
     discription:
       "Furniro is a complete e-commerce solution for furniture shopping built with performance, scalability, and user experience in mind. ",
+  },
+  {
+    projectTitle: "E-Commerce Dashboard ",
+    screenSrc: "./assets/projectsScreens/dashboard.png",
+    liveUrl: "https://dokan-dashboard-kappa.vercel.app/",
+    projectCategorey: "Full-Stack",
+    progectDevTool: "Vue  - Vuetify  - Pinia - Express -Atlas mongoDB",
+    discription:
+      "A modern admin dashboard built with Vue 3, Vuetify 3, and Vue Router. Featuring role-based authentication,multi-language support, and responsive design. ",
   },
 ];
 
