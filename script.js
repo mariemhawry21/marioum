@@ -148,13 +148,31 @@ let data = [
       "this is my graduation project a medical application that detect ElZaheimer disease ",
   },
   {
+    projectTitle: "El Sory Store",
+    screenSrc: "./assets/projectsScreens/elsory.png",
+    liveUrl:
+      "https://www.figma.com/design/Z1ybHlAjRr3VgswA0W4oNg/ElSory-Store?node-id=154-3672&p=f&t=tnXGKiSb4ROOlbdu-0",
+    projectCategorey: "ui",
+    progectDevTool: "Figma",
+    discription: "e-commerce platform for electronics",
+  },
+  {
     projectTitle: "CRUD libiray Applicatiion",
     screenSrc: "./assets/projectsScreens/lib.png",
     liveUrl: "https://mariemhawry21.github.io/cuddly-succotash/",
     projectCategorey: "front",
-    progectDevTool: "Vanila js",
+    progectDevTool: "HTML CSS JavaScript",
     discription:
       "Book Management System designed to manage a collection of books efficiently.The system provides features for adding, editing, and deleting book records ",
+  },
+  {
+    projectTitle: "Tranzee",
+    screenSrc: "./assets/projectsScreens/tranzee.png",
+    liveUrl: "https://tranzee.vercel.app/",
+    projectCategorey: "front",
+    progectDevTool: "HTML CSS JavaScript",
+    discription:
+      "Tranzee is a website that aims to promote the use of public transportation ",
   },
   {
     projectTitle: "Furniro e-commerce ",
