@@ -174,6 +174,15 @@ let data = [
     discription:
       "A modern admin dashboard built with Vue 3, Vuetify 3, and Vue Router. Featuring role-based authentication,multi-language support, and responsive design. ",
   },
+  {
+    projectTitle: "Feedly Social Media App ",
+    screenSrc: "./assets/projectsScreens/feedly.png",
+    liveUrl: "https://feedly-two.vercel.app/",
+    projectCategorey: "Full-Stack",
+    progectDevTool: "React  - Material Ui  - Framer - Express -Atlas mongoDB",
+    discription:
+      "social media platform that enable creating or editing posts interact with them with reactions and comments and responsive design for mobile. ",
+  },
 ];
 
 let projectContainer = document.querySelector("#project-list");
